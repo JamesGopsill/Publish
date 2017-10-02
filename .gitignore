@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+#######################
+# My Additional Ignores
+#######################
+
+webpub-src/node_modules/

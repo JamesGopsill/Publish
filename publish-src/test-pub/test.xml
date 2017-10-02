@@ -1,0 +1,102 @@
+<title>My First HTML Research Paper</title>
+<date>01-10-2017</date>
+<publication>Publish</publication>
+<citations>citations.bib</citations>
+
+<author>
+  <name>James Gopsill</name>
+  <affil>Publish.com</affil>
+  <email><email>
+</author>
+
+<abstract>
+
+This paper demonstrates the capabilities of WebPub to produce media rich, web-optimised research documents. We hope you enjoy using the tool and any feedback would be greatly appreciated
+
+</abstract>
+
+<keyword>Publish</keyword>
+<keyword>Research for the Web</keyword>
+
+<content>
+
+<h1>Introduction</h1>
+
+This has been created by WebPub<cite>webpub2015</cite> as a demo of the syntax and capabilities of writing research built for the web. As in LaTeX, all the formatting is handled automatically by AcaWrite so that the author can focus on the content of their research paper. References follow the well established BibTeX format.
+
+<h2>Figures and Tables</h2>
+
+This text discusses Figure <ref>my-fig</ref>. We currently support .png, .svg and .jpg files and hope to support more in the future. WebPub supports images of any size and they will be scaled according to the screen size. This is great if you have high resolutions photos of your research.
+
+<figure>
+  <file>beam_square_mesh.png</file>
+  <caption>Internal Structure of the Beam</caption>
+  <label>my-fig</label>
+</figure>
+
+Table <ref>my-table</ref> shows how easy it is to generate tables for your research document. Tables in WebPub use the same format as html5 tables and there are plenty of guides and help online in generating tables. Thes tables scale according to the screen size so that all the text can be viewed on any screen.
+
+<table>
+  <caption>My Research Table</caption>
+  <label>my-table</label>
+  <thead>
+    <tr>
+      <th>Column One</th>
+      <th>Column Two</th>
+      <th>Column Three</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data One</td>
+      <td>Data Two</td>
+      <td>Data Three</td>
+    </tr>
+    <tr>
+      <td>Data Four</td>
+      <td>Data Five</td>
+      <td>Data Six</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Mathematics</h2>
+
+Here is Equation <ref>my-equation</ref> and also some inline maths <equ>E=mc^2</equ>. Mathematics can be written in either LaTeX or MathML. WebPub keeps the underlying mathematical code within the document, which enables it to be indexed and searched! Soon you will be able to search by mathematical equation and find out who else is working in your research area.
+
+<equation>
+  F=Ma
+    <label>my-equation</label>
+</equation>
+
+<h2>Audio</h2>
+
+This text discusses Audio <ref>my-audio</ref>. We currently support .mp3 and .m4a audio files and looking to increase this further. Thisis a great way to further support your research by featuring key elements of an interview or even the whole thing!
+
+<audio>
+  <src>test.m4a</src>
+  <caption>An example of a audio file</caption>
+  <label>my-audio</label>
+</audio>
+
+<h2>Video</h2>
+
+This text discusses Video <ref>my-video</ref>. This is a great way to show off your experiments and their set-ups. We hope that the use of videos will further enrich the discussion of your research and further clarify the key points you wish to make.
+
+<video>
+  <src>grid_test.mp4</src>
+  <caption>A video of a 3D printed beam undergoing a 3-point bend test</caption>
+  <label>my-video</label>
+</video>
+
+<h2>Supporting Data</h2>
+
+In addition to all the functionality presented above, we also have the functionality for researchers to append datasets to their research papers as shown by Data <ref>data-1</ref>. This can be downloaded and re-used by researchers across the world and further support the citation of your work! We currently support the appending of csv files and we are looking into ways to support more file types in the future.
+
+<data>
+  <src>beam_data.csv</src>
+  <caption>Raw data from the Three-Point Bend Test</caption>
+  <label>data-1</label>
+</data>
+
+</content>

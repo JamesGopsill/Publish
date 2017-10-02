@@ -1,0 +1,29 @@
+<script>
+
+$(function(){
+
+  //console.log('Running my script');
+
+  var $panels = $('.card');
+  //console.log($panels);
+  /*
+  $('#filter').keyup(function() {
+    console.log('Entering Data');
+  });
+  */
+
+  $('#filter').on('keyup', function() {
+      // console.log('Filtering Working');
+      var val = this.value.toLowerCase();
+
+      $panels.show().filter(function() {
+          var panelTitleText = $(this).find('.card-header').text().toLowerCase();
+          return panelTitleText.indexOf(val) < 0;
+      }).hide();
+
+  });
+
+});
+
+
+</script>

@@ -1,0 +1,33 @@
+{{> header}}
+
+<body>
+
+{{> nav}}
+
+<div class="container">
+
+  {{{ contents }}}
+
+  <h2>Recent Posts</h2>
+
+  <hr>
+
+  {{#each collections.posts}}
+    <div class="card">
+      <div class="card-header">
+        <h4>{{title}}</h4>
+        <p><small>{{author}}</small></p>
+      </div>
+      <div class="card-body">
+        <p>{{ abstract }}</p>
+        <a href="{{path}}" class="btn btn-primary">View</a>
+      </div>
+    </div>
+  {{/each}}
+
+  {{> footer}}
+
+</div>
+
+</body>
+</html>

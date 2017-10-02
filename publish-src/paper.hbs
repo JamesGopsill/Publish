@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ title }}</title>
+  <style>
+    {{{ style }}}
+  </style>
+</head>
+<body>
+  <p class="created-by">Created by <a href="http://jamesgopsill.github.io/WebPub">Publish</a>, Enhancing Research Papers</p>
+
+  <p class="published-in">Published in: {{ publication }}</p>
+  <h1 class="title">{{ title }}</h1>
+
+  <ul class="authors">
+    {{#authors}}
+      <li>{{ name }} - {{ affil }}</li>
+    {{/authors}}
+  </ul>
+
+  <hr>
+
+  <h4 class="abstract">Abstract</h4>
+
+  {{{ abstract }}}
+
+  <h4 class="keywords">Keywords</h4>
+
+  <ul class="keywords-list">
+    {{#keywords}}
+      <li>{{ this }}</li>
+    {{/keywords}}
+  </ul>
+
+  <hr>
+
+  {{{ content }}}
+
+  <hr>
+
+  <h4 class="references">References</h4>
+
+  <ol class="citations">
+    {{#each citations}}
+      {{#if URL}}
+        <li><a href="{{ URL }}">{{AUTHOR}}, {{TITLE}}, {{JOURNAL}}, {{YEAR}}</a></li>
+      {{else}}
+        <li>{{AUTHOR}}, {{TITLE}}, {{JOURNAL}}, {{YEAR}}</li>
+      {{/if}}
+    {{/each}}
+  </ol>
+
+</body>
+</html>
