@@ -7,7 +7,7 @@ const discoverPartials = require('metalsmith-discover-partials');
 
 Metalsmith(__dirname)
   .metadata({
-    sitename: 'WebPub',
+    sitename: 'Publish',
     siteurl: 'https://jamesgopsill.github.io/WebPub/',
     description: 'Enhancing Research Papers',
     generatorName: 'Metalsmith',
