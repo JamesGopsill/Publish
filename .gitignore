@@ -72,3 +72,4 @@ Thumbs.db
 #######################
 
 webpub-src/node_modules/
+docs/.DS_Store
